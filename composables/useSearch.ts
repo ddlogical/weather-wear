@@ -1,14 +1,15 @@
 import config from "~/config";
 import cyrillicToTranslit from "cyrillic-to-translit-js";
+import { replaceSpaces } from "#imports";
 import type { City } from "~/types/city";
 
 const { API_CITIES_URL } = config;
 
 export function useSearch() {
-  const searchValue = ref(null);
+  const searchValue = ref<string | null>(null);
   const searchedValue = ref("");
 
-  const { data: fetchedItems, status } = useFetch<{data: City[]}>(API_CITIES_URL, {
+  const { data: fetchedItems, status } = useFetch<City[]>(API_CITIES_URL, {
     query: {
       namePrefix: searchedValue,
       limit: 5,
@@ -20,7 +21,7 @@ export function useSearch() {
   const searchItemsLoading = computed(() => status.value === 'pending')
 
   const searchItems = computed(() => {
-    const items = fetchedItems.value?.data;
+    const items = fetchedItems.value;
     if(items && items.length) {
       return items.map(el => ({id: el.id, title: el.name,  prependIcon: 'mdi-map-marker-outline'}))
     }
@@ -37,8 +38,11 @@ export function useSearch() {
     }
   }, 1000);
 
-  watch(searchValue, (newValue) => {
-    console.log("SELECTED VALUE", newValue);
+  watch(searchValue, async (newValue) => {
+    if(newValue) {
+      const path = replaceSpaces(newValue);
+      await navigateTo(`/places/${path}`)
+    }
   })
 
   return {

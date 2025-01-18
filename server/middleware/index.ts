@@ -1,4 +1,5 @@
 import { joinURL } from "ufo";
+import { City } from "~/types/city";
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig();
@@ -20,14 +21,12 @@ export default defineEventHandler(async (event) => {
     const path = event.path.replace(/^\/api\/cities/, "");
     const target = joinURL(proxyUrl, path);
 
-    // searchParams.append("appid", weatherApiKey);
-    const data = await $fetch(target, {
+    const { data } = await $fetch<Promise<{data: City}>>(target, {
       headers: {
         "x-rapidapi-key": citiesApiKey,
       },
       cache: "no-store",
     });
     return data;
-    // return proxyRequest(event, target);
   }
 });
