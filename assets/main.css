@@ -1,0 +1,11 @@
+
+main {
+  padding-top: 64px;
+  min-height: calc(100dvh);
+  background-color: rgb(var(--v-theme-background))
+}
+
+/* Utils */
+.bg-animated {
+  transition: background .8s cubic-bezier(.11,.61,.83,.67) !important;
+}
