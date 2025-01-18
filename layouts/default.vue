@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    
     <AppHeader />
 
     <main class="bg-animated">

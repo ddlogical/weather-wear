@@ -12,7 +12,10 @@ export const useWeatherStore = defineStore('weather', {
   actions: {
     async fetchWeather() {
       this.loading = true;
-      const { data }: any = await useFetch(API_WEATHER_URL);
+      const { data }: any = await useFetch(API_WEATHER_URL, {
+        lazy: true
+      });
+      console.log("DATA!!!", data)
       if (data.value) {
         this.weather = data.value;
         this.loading = false;
@@ -20,7 +23,9 @@ export const useWeatherStore = defineStore('weather', {
     },
     async fetchLocalWeather() {
       this.loading = true;
-      const { data }: any = await useFetch(API_WEATHER_URL);
+      const { data }: any = await useFetch(API_WEATHER_URL, {
+        lazy: true
+      });
       if (data.value) {
         this.weather = data.value;
         this.loading = false;
