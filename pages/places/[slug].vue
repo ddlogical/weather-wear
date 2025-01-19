@@ -14,7 +14,9 @@ const slug = computed(() => {
   }
   return slugData;
 });
-await fetchWeather(slug.value);
+
+await useAsyncData(slug.value, () => fetchWeather(slug.value).then(() => true))
+// await fetchWeather(slug.value);
 
 console.log(weather?.forecast)
 
@@ -23,5 +25,7 @@ console.log(weather?.forecast)
 <template>
 
   <AppSearch />
+
+  <Weather />
  
 </template>

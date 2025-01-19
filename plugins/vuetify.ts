@@ -11,6 +11,7 @@ export default defineNuxtPlugin((app) => {
           colors: {
             cold: colors.blue.base,
             hot: colors.yellow.lighten1,
+            accent: '#ECFAFF',
             background: colors.shades.white,
           },
         },
@@ -18,6 +19,7 @@ export default defineNuxtPlugin((app) => {
           colors: {
             cold: colors.blue.base,
             hot: colors.yellow.lighten1,
+            accent: '#ECFAFF',
             background: '#FFFFF5'
           },
         },
@@ -25,6 +27,7 @@ export default defineNuxtPlugin((app) => {
           colors: {
             cold: colors.blue.base,
             hot: colors.yellow.lighten1,
+            accent: '#ECFAFF',
             background: '#FBFEFF',
           },
         },
@@ -32,6 +35,7 @@ export default defineNuxtPlugin((app) => {
           colors: {
             cold: colors.blue.darken4,
             hot: colors.yellow.darken2,
+            accent: '#595959',
             background: colors.grey.darken4,
           },
         },

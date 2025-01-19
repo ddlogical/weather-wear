@@ -24,7 +24,7 @@ export const toggleWeatherTheme = (temp: number, theme: ThemeInstance) => {
 export const parseWeatherForecast = (
   forecast: WeatherForecast[]
 ): ParsedWeatherForecast[] => {
-  const periods: Record<DayPeriod, string[]> = {
+  const periods = {
     night: ["00:00", "03:00"],
     morning: ["06:00", "09:00"],
     day: ["12:00", "15:00"],
@@ -62,3 +62,40 @@ export const parseWeatherForecast = (
     )
   ).map(([date, periods]) => ({ date, periods }));
 };
+
+
+export const getCurrentWeather = (data: Record<DayPeriod, PeriodData>, today: boolean): WeatherForecast | null => {
+  const periodsOrder = ["night", "morning", "day", "evening"];
+  if(!today) return data.day['12:00'];
+
+  for (const period of periodsOrder) {
+    const times = data[period as keyof typeof data];
+    if (times) {
+      for (const time in times) {
+        if (times[time as keyof typeof times]) {
+          return times[time as keyof typeof times];
+        }
+      }
+    }
+  }
+
+  return null;
+};
+
+export const getTemperatureStatus = (temperatureKelvin: number, temperatureCelsius: number): string => {
+  return temperatureKelvin > (temperatureCelsius + 273.15) ? "hot" : "cold";
+}
+
+export const getDailyIcon = (optionKey: string) => {
+  const options = {
+    "00:00": 'cloudy-moon',
+    "03:00": 'cloudy-moon',
+    "06:00": 'cloud',
+    "09:00": 'sunny-cloud',
+    "12:00": 'sunny-cloud',
+    "15:00": 'sunny-cloud',
+    "18:00":'cloud',
+    "21:00":'cloud'
+  }
+  return options[optionKey as keyof typeof options];
+}
