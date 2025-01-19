@@ -10,9 +10,14 @@ export default defineEventHandler(async (event) => {
     const target = joinURL(proxyUrl, path);
     const { searchParams } = new URL(target);
     searchParams.append("appid", weatherApiKey);
-    const data = await $fetch(`${target}?${searchParams}`, {
-      cache: "no-store",
-    });
+    const data = await $fetch(`${target}?${searchParams}`);
+    return data;
+  }
+  if(event.path.startsWith("/api/location")) {
+    const proxyUrl = config.locationApiUrl;
+    const path = event.path.replace(/^\/api\/location/, "");
+    const target = joinURL(proxyUrl, path);
+    const data = await $fetch(target);
     return data;
   }
   if (event.path.startsWith("/api/cities")) {
@@ -25,7 +30,6 @@ export default defineEventHandler(async (event) => {
       headers: {
         "x-rapidapi-key": citiesApiKey,
       },
-      cache: "no-store",
     });
     return data;
   }
