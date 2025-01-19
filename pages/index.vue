@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const { weather, fetchLocalWeather } = useWeatherStore();
-// await fetchWeather();
+
 await fetchLocalWeather();
-// console.log(weather)
+console.log(weather?.forecast)
 </script>
 
 <template>

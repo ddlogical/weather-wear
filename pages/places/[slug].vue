@@ -16,8 +16,12 @@ const slug = computed(() => {
 });
 await fetchWeather(slug.value);
 
+console.log(weather?.forecast)
+
 </script>
 
 <template>
+
   <AppSearch />
+ 
 </template>

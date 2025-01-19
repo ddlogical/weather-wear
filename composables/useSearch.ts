@@ -36,7 +36,7 @@ export function useSearch() {
         searchedValue.value = newValue;
       }
     }
-  }, 1000);
+  }, 1500);
 
   watch(searchValue, async (newValue) => {
     if(newValue) {
