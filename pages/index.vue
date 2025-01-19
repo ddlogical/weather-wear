@@ -1,11 +1,10 @@
 <script setup lang="ts">
+const { weather, fetchLocalWeather } = useWeatherStore();
 
-const {weather, fetchWeather} = useWeatherStore();
-// await fetchWeather();
-
+await fetchLocalWeather();
+console.log(weather?.forecast)
 </script>
 
-
 <template>
-
+  <AppSearch />
 </template>
