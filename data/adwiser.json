@@ -1,0 +1,310 @@
+{
+  "rain": {
+    "cold": [
+      {
+        "recommendation": "When the temperature is cold and it’s raining, the weather can feel damp and chilly, especially with high humidity or wind. To stay comfortable and dry, wear a well-insulated winter coat or jacket that offers wind protection. Waterproof boots are essential to keep your feet dry and warm in the wet conditions. Pair your outfit with warm gloves and a cozy scarf to protect your hands and neck from the cold. A sturdy umbrella will help keep you dry, while jeans will provide comfort and protection against the wetness.",
+        "icons": ["jeans", "winter-coat", "boots", "umbrella"]
+      },
+      {
+        "recommendation": "In cold rainy weather, it’s important to stay warm and dry. A thick winter coat will block the wind and keep you warm, while waterproof boots will protect your feet from getting soaked. Add a scarf to protect your neck from the wind, and gloves to keep your hands warm. Don't forget an umbrella to shield yourself from the rain, and opt for jeans to ensure comfort and warmth while you’re outside in the wet weather.",
+        "icons": ["jeans", "winter-coat", "boots", "umbrella"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "If it's rainy but warm outside, it's best to wear a light spring coat to avoid overheating while still staying dry. A t-shirt and shorts will keep you comfortable and cool, while a cap can protect your face from the rain. Light shoes, such as sneakers or casual boots, are perfect for keeping your feet comfortable without getting too hot in the rain. Be sure to carry an umbrella to shield yourself from the drizzle!",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "For warm rainy days, a spring coat will keep you dry without trapping too much heat. Pair it with a t-shirt and shorts to stay cool and comfortable. A cap will protect your face from the rain, and you can wear light shoes or sandals to keep your feet cool while walking in the rain. An umbrella is also a must to keep your body dry in the drizzle!",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "snow": {
+    "cold": [
+      {
+        "recommendation": "Snowy weather can be quite cold, so it’s essential to dress warmly. A thick winter coat will keep you warm while blocking out the cold wind. Waterproof boots are a must to protect your feet from snow and moisture. Add a scarf and gloves for additional warmth, and wear a cozy cap to protect your head from the chill. Jeans will provide the necessary warmth for your legs, making them the perfect choice for snowy days.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "When it’s snowy and cold, a well-insulated winter coat is crucial to protect you from the cold temperatures. Waterproof boots will keep your feet dry as you walk through the snow, and gloves will help keep your hands warm. A scarf will shield your neck from the chill, and a cap will keep your head covered. Jeans are ideal for snowy weather, offering warmth and comfort while you brave the cold.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "If you find yourself in snowy conditions with milder temperatures, a light spring coat will provide enough protection from the elements without overheating you. A t-shirt underneath will keep you comfortable, and jeans will protect your legs from the cold while still offering mobility. Sneakers or light shoes are a good option for walking in light snow, while a cap can keep the snow out of your face.",
+        "icons": ["t-shirt", "jeans", "cap", "glasses"]
+      },
+      {
+        "recommendation": "When snow is falling but the temperature is milder, a light spring coat will be more than enough to keep you comfortable. Pair it with a t-shirt and jeans for warmth and comfort, and opt for casual shoes or sneakers to avoid wet feet. A cap will protect your head from the snow, while still keeping you cool enough in the warmer conditions.",
+        "icons": ["t-shirt", "jeans", "cap", "glasses"]
+      }
+    ]
+  },
+  "drizzle": {
+    "cold": [
+      {
+        "recommendation": "On drizzly, chilly days, a winter coat is the best choice to keep you warm and dry. Waterproof boots will keep your feet dry as you walk through the damp weather. Gloves will help keep your hands warm, and a scarf will protect your neck from the chilly air. Don't forget to carry an umbrella to shield yourself from the rain. Jeans will ensure comfort and keep you warm during the drizzle.",
+        "icons": ["jeans", "winter-coat", "boots", "umbrella"]
+      },
+      {
+        "recommendation": "For drizzly, cold days, it's important to stay dry and warm. Wear a thick winter coat to block out the rain and the cold, and waterproof boots will help you keep your feet dry. Gloves will keep your hands protected from the chill, and a scarf will shield your neck. Carry an umbrella to avoid getting drenched, and jeans are the ideal choice for this kind of weather.",
+        "icons": ["jeans", "winter-coat", "boots", "umbrella"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "If it's drizzling but the weather is warm, a light spring coat is a good choice to stay dry without overheating. A t-shirt and shorts will keep you cool and comfortable, while a cap will keep your face protected from the rain. Sneakers or light shoes are perfect for keeping your feet comfortable while walking through the drizzle.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "When it's drizzling but warm outside, opt for a spring coat that won’t trap too much heat. A t-shirt and shorts are ideal for staying cool, while a cap will help protect your face from the rain. Choose light shoes like sneakers or sandals for comfort and practicality during the drizzle.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "mist": {
+    "cold": [
+      {
+        "recommendation": "On misty, chilly days, visibility can be low, so it's important to stay warm and comfortable. A heavy winter coat will help protect you from the cold and provide warmth. Waterproof boots are essential to keep your feet dry in the damp conditions. Add gloves to keep your hands warm, and a scarf to protect your neck from the chill. An umbrella might be helpful in light mist. Jeans will ensure comfort and keep you warm in the misty weather.",
+        "icons": ["jeans", "winter-coat", "boots", "umbrella"]
+      },
+      {
+        "recommendation": "Misty weather can make it feel cooler, so a thick winter coat is perfect for staying warm and dry. Waterproof boots will keep your feet dry, and gloves will ensure your hands remain warm. A scarf will protect your neck from the cold wind, and don’t forget to carry an umbrella to shield yourself from the mist. Jeans are a great choice for comfort and warmth during misty conditions.",
+        "icons": ["jeans", "winter-coat", "boots", "umbrella"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "On misty days when the temperature is warmer, you can opt for a lighter spring coat to stay dry without overheating. A t-shirt and shorts are ideal to keep you cool while staying comfortable in the damp conditions. A cap will protect your face from the mist, and sneakers or light shoes are perfect for walking without getting too hot or uncomfortable.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "For misty but warm days, a light spring coat will protect you from the dampness while still allowing you to stay cool. A t-shirt and shorts will keep you comfortable, and a cap will help keep the mist out of your face. Sneakers or casual shoes will keep you comfortable as you walk through the mist.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "smoke": {
+    "cold": [
+      {
+        "recommendation": "On smoky, cold days, it’s crucial to protect yourself from the harmful particles in the air while staying warm. A winter coat will provide warmth and help block out the cold. Waterproof boots are essential to protect your feet, and gloves will keep your hands warm. A scarf will help protect your neck, and a cap will shield your head from the cold. Jeans are perfect for comfort and warmth in smoky conditions.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "Smoky weather can be challenging, so make sure to stay warm and protect yourself from the smoke. A thick winter coat will keep you warm, while waterproof boots will keep your feet dry. Gloves and a scarf are essential to protect your hands and neck from the cold and smoke. Don’t forget to wear jeans for extra warmth and comfort in smoky conditions.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "If the smoke is present during warm weather, a light spring coat will provide enough coverage without overheating. A t-shirt and shorts will help keep you cool while still offering comfort in the smoky air. A cap will shield your face from the sun and the smoke, and light shoes like sneakers will keep your feet comfortable during the day.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "For warm, smoky days, opt for a spring coat to protect yourself from the air while staying cool. A t-shirt and shorts will keep you comfortable in the heat, and a cap will help keep the smoke out of your face. Choose light shoes or sneakers for comfort during these hot, smoky conditions.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "haze": {
+    "cold": [
+      {
+        "recommendation": "On hazy, cold days, it's important to stay warm while dealing with reduced visibility. A thick winter coat will keep you warm and protect you from the chill. Waterproof boots will help keep your feet dry and comfortable, while gloves will keep your hands warm. A scarf will help protect your neck, and a cap will keep your head covered. Jeans are ideal for staying warm and comfortable during these hazy conditions.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "Hazy weather can make things feel colder than they actually are, so dress warmly. A winter coat will help block out the cold, while waterproof boots are necessary for staying dry. Gloves and a scarf will keep your extremities warm, and a cap will provide additional warmth for your head. Jeans are a solid choice for keeping your legs warm and comfortable in the hazy conditions.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "If the haze is present but the weather is warm, opt for a light spring coat to stay dry while avoiding overheating. A t-shirt and shorts will keep you cool and comfortable, while a cap will protect your face from the sun and haze. Sneakers or casual shoes will keep your feet comfortable as you walk through the hazy conditions.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "For hazy, warm days, choose a spring coat that offers light protection while keeping you cool. A t-shirt and shorts are the perfect combination for comfort, while a cap will protect your face from the sun and haze. Casual shoes or sneakers are great options for keeping your feet comfortable in the heat.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "dust": {
+    "cold": [
+      {
+        "recommendation": "On dusty, cold days, it's crucial to stay warm while protecting yourself from the dust in the air. A heavy winter coat will keep you warm and block the wind, while waterproof boots will protect your feet from the dust and moisture. Gloves will help keep your hands warm, and a scarf will shield your neck. A cap will protect your head and keep dust out of your face. Jeans are ideal for warmth and comfort during dusty weather.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "Dusty, cold weather requires a good strategy for staying warm and protected. A thick winter coat will shield you from the cold, while waterproof boots will keep your feet dry and comfortable. Gloves are necessary to protect your hands from the chill, and a scarf will keep your neck warm. A cap will prevent dust from getting in your hair and face. Jeans will keep you warm and comfortable during these dusty conditions.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "In dusty, hot weather, you'll need to dress light and breathable while still protecting yourself from the elements. A light spring coat will offer protection without causing you to overheat. A t-shirt and shorts are perfect for staying cool, while a cap will help protect your face and eyes from the dust. Light shoes or sandals will keep your feet comfortable as you walk through the dust.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "When it's hot and dusty, the best option is to wear a light spring coat to protect yourself from the dust without getting too hot. A t-shirt and shorts will keep you comfortable, while a cap will shield your face and eyes from the dust. Sneakers or sandals will be perfect for walking, keeping your feet cool in the heat.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "fog": {
+    "cold": [
+      {
+        "recommendation": "Foggy and cold days can feel damp and chilly, so a heavy winter coat is essential to stay warm. Waterproof boots will keep your feet dry, while gloves will protect your hands from the cold. A scarf will help shield your neck, and a cap will prevent moisture from affecting your hair. Jeans are a great option for comfort and warmth in foggy conditions.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "In foggy and cold weather, it's best to wear a thick winter coat to keep out the chill. Waterproof boots are necessary to keep your feet dry in the damp conditions, while gloves will help keep your hands warm. A scarf will provide extra protection, and a cap will help prevent fog from affecting your head and hair. Jeans are a comfortable and warm option for foggy days.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "On warm, foggy days, it's important to stay cool while still staying dry. A light spring coat will provide protection from the mist, while a t-shirt and shorts will keep you comfortable in the heat. A cap will protect your face from moisture and fog, and light shoes or sandals are ideal for walking without overheating.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "If the weather is warm but foggy, choose a light spring coat that will allow you to stay cool while protecting you from the fog. A t-shirt and shorts will keep you comfortable, and a cap will shield your face from the mist. Sneakers or sandals will keep your feet cool and dry as you walk through the fog.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "sand": {
+    "cold": [
+      {
+        "recommendation": "On cold, sandy days, you'll need to protect yourself from both the cold and the sand. A heavy winter coat will block out the wind, while waterproof boots will help protect your feet from the sand. Gloves will keep your hands warm, and a scarf will protect your neck from both the chill and the sand. A cap will shield your face from the wind and dust, and jeans will keep your legs warm and protected from the sand.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "In cold and sandy conditions, a thick winter coat will keep you warm, while waterproof boots will help protect your feet from the sand and moisture. Gloves are a must for keeping your hands warm, and a scarf will protect your neck from the chill and sand. A cap will help keep sand out of your face, and jeans are perfect for warmth and protection.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "In hot, sandy conditions, lightweight clothing is a must. A light spring coat will provide protection without overheating, while a t-shirt and shorts are perfect for staying cool. A cap will protect your face from the sun and sand, and light shoes or sandals will keep your feet comfortable as you walk through the sand.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "For hot, sandy weather, a light spring coat will protect you from the elements, while a t-shirt and shorts will keep you cool. A cap will shield your face from the sun and sand, and sneakers or sandals are great for walking in the sand without overheating.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "ash": {
+    "cold": [
+      {
+        "recommendation": "On cold, ashy days, you'll need to stay warm and protect yourself from the ash in the air. A heavy winter coat will keep you warm while blocking out the cold wind. Waterproof boots are essential for keeping your feet dry and safe from ash, while gloves will protect your hands from the chill. A scarf will shield your neck from both the cold and the ash particles. A cap will prevent the ash from getting into your eyes and hair. Jeans are the perfect choice for warmth and comfort during ashy weather.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "In cold, ashy conditions, you’ll need to layer up to stay warm and protected. A thick winter coat will keep you warm and shield you from the cold, while waterproof boots will protect your feet from the ash and wetness. Gloves and a scarf will keep your hands and neck warm, while a cap will shield your head from the ash. Jeans are a great choice for keeping your legs warm and comfortable during these ashy, cold days.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "In hot, ashy conditions, it’s important to stay cool while protecting yourself from the ash in the air. A light spring coat will provide some protection without causing you to overheat. A t-shirt and shorts will keep you cool and comfortable, while a cap will shield your face and eyes from the ash. Light shoes or sandals are ideal for walking without getting too hot or uncomfortable in the ashy air.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "On hot, ashy days, a light spring coat is the best option to protect yourself from the ash while staying cool. A t-shirt and shorts will keep you comfortable in the heat, and a cap will help keep the ash out of your face and eyes. Choose light shoes or sandals for comfort as you navigate the ashy conditions.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "squall": {
+    "cold": [
+      {
+        "recommendation": "During a cold squall, you’ll want to make sure you stay warm and dry while dealing with strong winds and snow or rain. A thick winter coat will provide warmth and protection from the harsh conditions. Waterproof boots are essential to keep your feet dry, while gloves will keep your hands warm and protect them from the wind. A scarf will shield your neck from the cold wind, and a cap will protect your head. Jeans are a great option for warmth and comfort.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "A squall can bring a sudden drop in temperature and intense wind, so it’s important to bundle up. A heavy winter coat will provide insulation, and waterproof boots will protect your feet from the snow and rain. Gloves and a scarf will help keep your extremities warm, while a cap will shield your head from the cold gusts. Jeans are perfect for staying warm and comfortable during these conditions.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "If a squall occurs on a warm day, it’s best to dress in layers so you can adjust as the temperature changes. A light spring coat will keep you protected from the rain or wind without overheating. A t-shirt and shorts will keep you cool when the squall passes, and a cap will protect your face from the wind. Light shoes or sandals are ideal for staying comfortable during a sudden squall.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "During a hot squall, it's important to stay cool while also protecting yourself from the sudden weather changes. A light spring coat will offer protection from the wind or rain without causing you to overheat. A t-shirt and shorts will keep you comfortable, and a cap will shield your face from the gusty winds. Sneakers or casual shoes will keep your feet comfortable and ready to move quickly if needed.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "tornado": {
+    "cold": [
+      {
+        "recommendation": "When a tornado hits during cold weather, it’s important to stay protected from both the storm and the cold. A heavy winter coat will shield you from the wind and low temperatures. Waterproof boots will protect your feet from rain and debris, while gloves will keep your hands warm. A scarf will protect your neck from the chill, and a cap will shield your head from wind and debris. Jeans are ideal for warmth and protection.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "A tornado in cold weather can be dangerous, so dressing warmly and securely is essential. A thick winter coat will provide insulation against the cold, while waterproof boots will keep your feet dry and protected. Gloves and a scarf will help keep you warm, while a cap will protect your head. Jeans are a great option for staying warm and safe during these harsh conditions.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "On hot days when a tornado is imminent, you need to stay cool but also protect yourself from the storm’s wind and debris. A light spring coat will shield you from the wind, while a t-shirt and shorts will keep you comfortable in the heat. A cap will protect your face from the sun and flying debris. Sneakers or sandals will keep your feet comfortable, but make sure they are sturdy enough for sudden movements.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "If a tornado strikes on a hot day, it’s essential to wear lightweight clothes that will keep you cool. A light spring coat can offer some protection from the wind, while a t-shirt and shorts are ideal for comfort. A cap will shield your face from the flying debris, and light shoes or sandals will keep your feet cool and comfortable.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "clear": {
+    "cold": [
+      {
+        "recommendation": "On clear, sunny days with cold temperatures, you'll need to layer up to stay warm. A heavy winter coat will keep you insulated from the cold wind, while waterproof boots will protect your feet from any snow or slush. Gloves will keep your hands warm, and a scarf will shield your neck from the chill. A cap will protect your head from the sun's rays, and jeans are perfect for warmth and comfort during sunny, cold weather.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "For clear, cold days, it's important to stay warm while protecting yourself from the elements. A thick winter coat will keep you warm, while waterproof boots will keep your feet dry. Gloves will help protect your hands from the cold, and a scarf will keep your neck warm. A cap will protect your head from both the cold and the sun. Jeans are a great option to keep your legs warm during sunny, chilly days.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "On sunny, hot days, you’ll want to wear lightweight, breathable clothing to stay cool. A light spring coat will protect you from the sun's rays without making you overheat. A t-shirt and shorts will keep you comfortable in the heat, while a cap will shield your face from the sun. Sunglasses are a must to protect your eyes from the glare, and light shoes or sandals will keep your feet cool.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "During hot, sunny weather, the best outfit consists of breathable, lightweight clothing. A light spring coat offers sun protection without causing you to overheat, while a t-shirt and shorts will keep you cool and comfortable. A cap will protect your head from the sun, and sunglasses will shield your eyes. Light shoes or sandals will keep your feet comfortable throughout the day.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  },
+  "clouds": {
+    "cold": [
+      {
+        "recommendation": "On cloudy, cold days, you’ll need to keep warm while staying dry. A thick winter coat will provide insulation against the cold, while waterproof boots will protect your feet from snow or rain. Gloves will help keep your hands warm, and a scarf will shield your neck from the chill. A cap will protect your head from the cold wind, and jeans are a great option for warmth and comfort during cloudy, chilly weather.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      },
+      {
+        "recommendation": "Cloudy, cold weather can make it feel even chillier, so dress in layers. A winter coat will keep you warm, while waterproof boots will keep your feet dry in damp conditions. Gloves and a scarf will help protect your extremities from the cold, and a cap will keep your head warm. Jeans are a great option for staying warm and comfortable in cloudy weather.",
+        "icons": ["jeans", "winter-coat", "boots", "gloves"]
+      }
+    ],
+    "hot": [
+      {
+        "recommendation": "On cloudy, hot days, you’ll want to dress for comfort while still protecting yourself from the sun’s rays. A light spring coat can provide some protection from the sun, but a t-shirt and shorts are the best options for staying cool. A cap will shield your face from the sun, and sunglasses will protect your eyes from glare. Light shoes or sandals will keep your feet cool and comfortable.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      },
+      {
+        "recommendation": "During hot, cloudy days, it’s important to wear breathable, comfortable clothing to stay cool. A light spring coat can provide some protection from the sun and wind, while a t-shirt and shorts are perfect for comfort. A cap will help shield your face from the sun, and sunglasses will protect your eyes. Light shoes or sandals will keep your feet cool and comfortable as you enjoy the day.",
+        "icons": ["t-shirt", "shorts", "cap", "glasses"]
+      }
+    ]
+  }
+}

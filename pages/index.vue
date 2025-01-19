@@ -2,9 +2,11 @@
 const { weather, fetchLocalWeather } = useWeatherStore();
 
 await fetchLocalWeather();
-console.log(weather?.forecast)
 </script>
 
 <template>
   <AppSearch />
+  <client-only>
+    <Weather />
+  </client-only>
 </template>
