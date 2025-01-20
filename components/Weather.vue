@@ -5,11 +5,8 @@ const selected = ref<number>(0);
 
 const currentWeather = computed(() => {
   const res = weather?.forecast[selected.value];
-  console.log("RES", res);
   return res;
-})
-
-
+});
 </script>
 
 <template>
@@ -24,16 +21,20 @@ const currentWeather = computed(() => {
           :today="!index"
         />
       </v-slide-group>
-      <WeatherWidget :periods="currentWeather.periods" :today="selected === 0" />
+      <WeatherWidget
+        :periods="currentWeather.periods"
+        :today="selected === 0"
+      />
     </template>
   </section>
 </template>
 
 <style scoped>
 .weather-section {
-  max-width: 65%;
   margin: 0 auto;
+  padding: 0 1rem;
   overflow: hidden;
+  max-width: max-content;
   min-height: calc(100dvh - 18rem);
 }
 </style>

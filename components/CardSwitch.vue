@@ -6,6 +6,8 @@ import config from "~/config";
 
 const { MIN_HOT_TEMP } = config;
 
+const options = useOptionsStore();
+
 const { periods, today } = defineProps<{
   periods: Record<DayPeriod, PeriodData>;
   today: boolean;
@@ -17,7 +19,7 @@ const weather = computed(() => {
   return weather;
 });
 const icons = computed(() => {
-  const weatherStatus = weather?.value.main?.toLowerCase();
+  const weatherStatus = weather?.value?.main?.toLowerCase();
   const weatherType = getTemperatureStatus(
     forecast.value?.main?.temp ?? 0,
     MIN_HOT_TEMP
@@ -35,7 +37,7 @@ const icons = computed(() => {
 </script>
 
 <template>
-  <v-slide-group-item v-slot="{ isSelected, toggle, selectedClass }">
+  <v-slide-group-item v-if="forecast" v-slot="{ isSelected, toggle }">
     <v-card
       :class="[isSelected ? 'card-switch--active' : '', 'card-switch', 'ma-2']"
       elevation="1"
@@ -68,9 +70,9 @@ const icons = computed(() => {
           :width="50"
           :height="40"
         />
-        <p>{{ convertTemperature(forecast?.main?.temp ?? 0, "celsius") }}</p>
+        <p>{{ convertTemperature(forecast?.main?.temp ?? 0, options.unit) }}</p>
         <p class="text-caption">
-          {{ convertTemperature(forecast?.main?.feels_like ?? 0, "celsius") }}
+          {{ convertTemperature(forecast?.main?.feels_like ?? 0, options.unit) }}
         </p>
       </div>
     </v-card>

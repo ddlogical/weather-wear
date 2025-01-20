@@ -6,7 +6,7 @@ const { searchValue, searchItems, searchItemsLoading, debouncedSearch } =
 </script>
 
 <template>
-  <section class="pt-10 pb-2">
+  <section class="pt-10 pb-2 px-2">
     <v-row justify="center" dense>
       <v-autocomplete
         :items="searchItems"
