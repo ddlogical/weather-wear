@@ -1,13 +1,3 @@
-<script setup lang="ts">
-import { useTheme } from "vuetify";
-
-// const theme = useTheme();
-// const temp = ref(0);
-
-// watch(temp, (newValue) => {
-//   toggleWeatherTheme(newValue, theme)
-// })
-</script>
 
 <template>
   <v-app-bar
@@ -16,7 +6,7 @@ import { useTheme } from "vuetify";
     class="px-4 position-relative bg-animated"
   >
     <template v-slot:prepend>
-      <AppLogo :width="90" :height="50" />
+      <AppLogo :width="64" :height="60" />
     </template>
     <v-app-bar-title
       ><h1 class="text-h4 el-centered d-none d-sm-block">
