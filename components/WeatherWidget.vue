@@ -11,6 +11,8 @@ const { periods, today } = defineProps<{
   today: boolean;
 }>();
 
+const options = useOptionsStore();
+
 const forecast = computed(() => getCurrentWeather(periods, today));
 const weather = computed(() => {
   const [weather] = forecast.value?.weather ?? [];
@@ -51,34 +53,39 @@ const adwice = computed(() => {
 <template>
   <div class="weather-widget">
     <div class="weather-widget__common">
-      <p v-if="today" class="text-h5">Today</p>
-      <p>
-        <span class="text-h5 el-text-bold">{{
-          format(new Date(forecast?.dt_txt ?? ""), "dd")
-        }}</span>
-        {{ format(new Date(forecast?.dt_txt ?? ""), "LLLL") }}
-      </p>
-      <p>{{ format(new Date(forecast?.dt_txt ?? ""), "EEEE") }}</p>
+      <div>
+        <p v-if="today" class="text-h5">Today</p>
+        <p>
+          <span class="text-h5 el-text-bold">{{
+            format(new Date(forecast?.dt_txt ?? ""), "dd")
+          }}</span>
+          {{ format(new Date(forecast?.dt_txt ?? ""), "LLLL") }}
+        </p>
+        <p>{{ format(new Date(forecast?.dt_txt ?? ""), "EEEE") }}</p>
+      </div>
+
       <div class="d-flex flex-column align-center">
         <WeatherIcon
           :type="weather?.main?.toLowerCase()"
           :width="200"
           :height="150"
         />
-        <p class="text-h5 el-text-bold">
-          {{ convertTemperature(forecast?.main?.temp ?? 0, "celsius") }}
-        </p>
       </div>
-      <p class="text-h6">
-        Feels like:
-        {{ convertTemperature(forecast?.main?.feels_like ?? 0, "celsius") }}
+      <p class="text-h5 text-center el-text-bold">
+        {{ convertTemperature(forecast?.main?.temp ?? 0, options.unit) }}
       </p>
-      <p class="text-capitalize">{{ weather?.description }}</p>
+      <p class="text-h6 d-none d-sm-block">
+        Feels like:
+        {{ convertTemperature(forecast?.main?.feels_like ?? 0, options.unit) }}
+      </p>
+      <p class="text-capitalize d-none d-sm-block">
+        {{ weather?.description }}
+      </p>
     </div>
 
-    <WeatherDaily :periods="periods"  />
+    <WeatherDaily :periods="periods" />
 
-    <v-card class="weather-widget__cloth" elevation="2">
+    <v-card class="weather-widget__cloth d-sm-flex" elevation="2">
       <ClothIcon
         v-for="(icon, index) in icons"
         :type="icon"
@@ -96,13 +103,15 @@ const adwice = computed(() => {
 </template>
 
 <style scoped>
+
 .weather-widget {
   display: grid;
   padding: 1rem;
   column-gap: 2rem;
   row-gap: 1rem;
   grid-template-rows: repeat(6, 80px);
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, minmax(auto, 80px));
+  justify-content: center;
 }
 
 .weather-widget__common {
@@ -115,7 +124,7 @@ const adwice = computed(() => {
   grid-column: 1 / 6;
   grid-row: 5 / 7;
   padding: 1rem;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -128,5 +137,25 @@ const adwice = computed(() => {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .weather-widget {
+    row-gap: 2rem;
+  }
+
+  .weather-widget__common {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .weather-widget__adwices {
+  grid-column: 1 / -1;
+  grid-row: 4 / -1;
+}
 }
 </style>
